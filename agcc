@@ -1,4 +1,3 @@
-#
+#!/bin/bash
 echo "Compiling $*"
-arm-linux-gnueabihf-gcc -mfpu=vfp -static -ggdb3 $*
-
+arm-linux-gnueabihf-gcc -mfpu=vfp -static -ggdb3 "$@"
